@@ -9,3 +9,78 @@
     font-family: 'Nasa';
     src: url('../font/Nasa.ttf') format('truetype');
 }
+
+html, body{
+    height: 100%;
+}
+
+.main{
+    background-color: #aeb0b5;
+}
+
+.titulo{
+    width: 100%;
+    background-color: #0b3d91;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white;
+    text-shadow: black 8px 5px 5px;
+    text-align: center;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-imagem{
+    
+}
+
+#titulo-da-imagem{
+    padding: 20px 0;
+}
+#imagem{
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border: solid white 10px;
+    box-shadow: 0 0 10px 5px black;
+}
+
+.form{
+    padding-left: 20px;
+}
+
+#data{
+    font-size: 20px;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.btn-pesquisar{
+    font-size: 20px;
+    padding: 5px;
+}
+
+#descricao-imagem-modal{
+    padding: 20px;
+}
+
+.modal-flex{
+    display: flex;
+}
+
+
+
+#imagem-modal{
+    max-width: 100%;
+    width: 500px;
+    object-fit: cover;
+    border: solid white 10px;
+    box-shadow: 0 0 10px 5px black;
+}
+

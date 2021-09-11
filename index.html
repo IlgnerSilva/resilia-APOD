@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/main.js"></script>
     <title>Consumindo api da NASA</title>
@@ -14,9 +15,26 @@
             <h1>Apod</h1>
         </div>
         <section class="section">
-            <div class="imagem">
-                <h2 id="titulo">Titulo</h2>
-                <img src="" alt="">
+            <div class="div-imagem">
+                <h2 id="titulo-da-imagem"></h2>
+                <img id="imagem" src="" alt="">
+                <div class="w3-container">
+                    <h2>W3.CSS Modal</h2>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+                  
+                    <div id="id01" class="w3-modal">
+                      <div class="w3-modal-content">
+                        <div class="w3-container">
+                          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                          <h2 id="titulo-imagem-modal"></h2>
+                          <div class="modal-flex">
+                              <img id="imagem-modal" src="" alt="">
+                              <p id="descricao-imagem-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, non sapiente! Odit incidunt perspiciatis nisi. Cumque, nam fugiat, sequi accusantium ipsa totam dolorem aliquam vitae non, minus eveniet voluptate perspiciatis.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
             <form class="form">
                 <h3>Digite uma data</h3>

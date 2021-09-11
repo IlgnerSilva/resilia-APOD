@@ -4,7 +4,12 @@ function ajax(e){
 
     xhr.onload = function(){
         const converteJSON = JSON.parse(xhr.responseText)
-        document.querySelector('img').setAttribute("src", converteJSON.url)
+        console.log(converteJSON)
+        document.querySelector('#imagem').setAttribute("src", converteJSON.url)
+        document.querySelector('#imagem-modal').setAttribute("src", converteJSON.url)
+        document.querySelector('#titulo-da-imagem').innerHTML = converteJSON.title
+        document.querySelector('#titulo-imagem-modal').innerHTML = converteJSON.title
+        document.querySelector('#descricao-imagem-modal').innerHTML = converteJSON.explanation
     }
     xhr.send()
 }
