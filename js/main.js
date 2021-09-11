@@ -5,21 +5,24 @@ function ajax(e){
     xhr.onload = function(){
         const converteJSON = JSON.parse(xhr.responseText)
         console.log(converteJSON)
-        document.querySelector('#imagem').setAttribute("src", converteJSON.url)
-        document.querySelector('#imagem-modal').setAttribute("src", converteJSON.url)
-        document.querySelector('#titulo-da-imagem').innerHTML = converteJSON.title
-        document.querySelector('#titulo-imagem-modal').innerHTML = converteJSON.title
-        document.querySelector('#descricao-imagem-modal').innerHTML = converteJSON.explanation
+        mostra(converteJSON)
     }
     xhr.send()
 }
 
-let data = document.querySelector("#data");
+function mostra(propriedade){
+    document.querySelector('#imagem').setAttribute("src", propriedade.url)
+    document.querySelector('#imagem-modal').setAttribute("src", propriedade.url)
+    document.querySelector('#titulo-da-imagem').innerHTML = propriedade.title
+    document.querySelector('#titulo-imagem-modal').innerHTML = propriedade.title
+    document.querySelector('#descricao-imagem-modal').innerHTML = propriedade.explanation
+}
 
+ajax('');
+
+let data = document.querySelector("#data");
 document.querySelector(".btn-pesquisar").addEventListener("click", function(){
    ajax(data.value)
 })
  
-
-ajax('');
-
+ 

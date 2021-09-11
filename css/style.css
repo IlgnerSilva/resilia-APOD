@@ -5,6 +5,7 @@
     font-family: 'Nasa';
 }
 
+
 @font-face{
     font-family: 'Nasa';
     src: url('../font/Nasa.ttf') format('truetype');
@@ -12,10 +13,16 @@
 
 html, body{
     height: 100%;
+    background-color: #aeb0b5;
 }
 
 .main{
-    background-color: #aeb0b5;
+    height: 95%;
+}
+
+.titulo h1{
+    font-family: 'Nasa';
+    font-size: 40px;
 }
 
 .titulo{
@@ -40,6 +47,8 @@ html, body{
 
 #titulo-da-imagem{
     padding: 20px 0;
+    font-family: 'Nasa';
+    font-size: 30px;
 }
 #imagem{
     max-width: 100%;
@@ -53,6 +62,11 @@ html, body{
 
 .form{
     padding-left: 20px;
+    
+}
+
+.form h3{
+    font-family: 'Nasa';
 }
 
 #data{
@@ -64,6 +78,10 @@ html, body{
 .btn-pesquisar{
     font-size: 20px;
     padding: 5px;
+}
+
+.w3-button{
+    margin-top: 10px;
 }
 
 #descricao-imagem-modal{
@@ -84,3 +102,24 @@ html, body{
     box-shadow: 0 0 10px 5px black;
 }
 
+footer{
+    width: 100%;
+}
+
+footer .contatos{
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.copyright p{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .modal-flex{
+        flex-wrap: wrap;
+    }
+    .section{
+        flex-wrap: wrap;
+    }
+}
